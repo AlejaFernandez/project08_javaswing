@@ -40,7 +40,9 @@ public class MainWindow extends JFrame {
         JTextField inputDolar = new JTextField();//Crear casilla
         inputDolar.setBounds(10,60,100,30);//dimensiones del  
         panel.add(inputDolar);//Agregar elemento 
-        
+        JLabel result= new JLabel("0,0");//mostar resultado con un texto
+        result.setBounds(30,100,100,30);//dimensiones del texto
+        panel.add(result);//agreagar al panel
     
     }
 }
