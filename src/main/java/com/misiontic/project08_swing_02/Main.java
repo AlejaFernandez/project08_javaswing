@@ -11,6 +11,7 @@ package com.misiontic.project08_swing_02;
  */
 public class Main {
     public static void main(String[] args) {
-        
+        MainWindow mainWindow = new MainWindow();//Instanciar la clase
+        mainWindow.setVisible(true);// dar orden de visibilizarse a la ventana creada
     }
 }
