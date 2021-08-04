@@ -11,6 +11,7 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -36,5 +37,10 @@ public class MainWindow extends JFrame {
         JLabel description = new JLabel("Convertir de dolares a pesos");
         description.setBounds(10, 10, 50, 50);
         panel.add(description); //Agregar elemento al panel dentro de la ventana
+        JTextField inputDolar = new JTextField();//Crear casilla
+        inputDolar.setBounds(10,60,100,30);//dimensiones del  
+        panel.add(inputDolar);//Agregar elemento 
+        
+    
     }
 }
