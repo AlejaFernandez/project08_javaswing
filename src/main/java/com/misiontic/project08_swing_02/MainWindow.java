@@ -5,10 +5,18 @@
  */
 package com.misiontic.project08_swing_02;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author aleja
  */
-public class MainWindow {
+public class MainWindow extends JFrame {
     
+    MainWindow(){
+        setBounds(450,200,500,200);//tamaño y posicion
+        setTitle("Mision TIC");// titulo de la venta
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
+        
+    }
 }

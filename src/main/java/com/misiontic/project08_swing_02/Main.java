@@ -10,5 +10,7 @@ package com.misiontic.project08_swing_02;
  * @author aleja
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        
+    }
 }
