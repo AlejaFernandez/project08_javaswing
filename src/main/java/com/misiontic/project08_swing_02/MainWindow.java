@@ -5,6 +5,9 @@
  */
 package com.misiontic.project08_swing_02;
 
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -16,7 +19,14 @@ import javax.swing.JPanel;
 public class MainWindow extends JFrame {
     
     MainWindow(){
-        setBounds(450,200,500,200);//tamaño y posicion
+        //setBounds(450,200,500,200);//tamaño y posicion
+        //setSize(300,300);
+        //setLocationRelativeTo(null);//centrar
+        Toolkit myScreen = Toolkit.getDefaultToolkit();//detectar la pantalla
+        Dimension screenSize = myScreen.getScreenSize();//Obteniedno tamaño de pantalla completo
+        int height = screenSize.height;//alto
+        int width = screenSize.width;
+        setSize(width/2, height/2);
         setLocationRelativeTo(null);
         setTitle("Mision TIC");// titulo de la venta
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
