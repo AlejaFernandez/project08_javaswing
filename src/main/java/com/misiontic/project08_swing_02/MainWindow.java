@@ -20,9 +20,10 @@ public class MainWindow extends JFrame {
         setTitle("Mision TIC");// titulo de la venta
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
         JPanel panel =new JPanel();
+        panel.setLayout(null); //desactivar layaot predeterminado
         this.getContentPane().add(panel); //El panel se encarga de ubicar los componentes
         JLabel description = new JLabel("Convertir de dolares a pesos");
         description.setBounds(10, 10, 50, 50);
-        this.add(description); //Agregar elemento a la ventana
+        panel.add(description); //Agregar elemento al panel dentro de la ventana
     }
 }
