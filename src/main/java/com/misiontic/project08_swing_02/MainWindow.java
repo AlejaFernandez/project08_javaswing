@@ -7,6 +7,7 @@ package com.misiontic.project08_swing_02;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /**
  *
@@ -18,8 +19,10 @@ public class MainWindow extends JFrame {
         setBounds(450,200,500,200);//tamaño y posicion
         setTitle("Mision TIC");// titulo de la venta
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
-        
+        JPanel panel =new JPanel();
+        this.getContentPane().add(panel); //El panel se encarga de ubicar los componentes
         JLabel description = new JLabel("Convertir de dolares a pesos");
+        description.setBounds(10, 10, 50, 50);
         this.add(description); //Agregar elemento a la ventana
     }
 }
