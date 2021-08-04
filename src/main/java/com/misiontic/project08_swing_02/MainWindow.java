@@ -6,6 +6,7 @@
 package com.misiontic.project08_swing_02;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
  *
@@ -18,5 +19,7 @@ public class MainWindow extends JFrame {
         setTitle("Mision TIC");// titulo de la venta
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
         
+        JLabel description = new JLabel("Convertir de dolares a pesos");
+        this.add(description); //Agregar elemento a la ventana
     }
 }
