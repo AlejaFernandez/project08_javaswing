@@ -17,6 +17,7 @@ public class MainWindow extends JFrame {
     
     MainWindow(){
         setBounds(450,200,500,200);//tamaño y posicion
+        setLocationRelativeTo(null);
         setTitle("Mision TIC");// titulo de la venta
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//forma de cerrar app
         JPanel panel =new JPanel();
